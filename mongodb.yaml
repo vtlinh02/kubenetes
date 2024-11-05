@@ -5,7 +5,7 @@ metadata:
   labels:
     app: mongodb
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: mongodb
@@ -40,5 +40,5 @@ spec:
     app: mongodb
   ports:
     - protocol: TCP
-      port: 3000
+      port: 27017
       targetPort: 27017
